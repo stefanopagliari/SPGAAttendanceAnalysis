@@ -6923,7 +6923,7 @@ b&&(b.preventDefault(),b.stopPropagation())}else(l.isFocused||"single"===l.setti
   <li><a href="#distance-from-campus" id="toc-distance-from-campus" class="nav-link" data-scroll-target="#distance-from-campus"><span class="header-section-number">1.2.9</span> Distance from Campus</a></li>
   <li><a href="#teacher-profile" id="toc-teacher-profile" class="nav-link" data-scroll-target="#teacher-profile"><span class="header-section-number">1.2.10</span> Teacher Profile</a></li>
   </ul></li>
-  <li><a href="#statistical" id="toc-statistical" class="nav-link" data-scroll-target="#statistical"><span class="header-section-number">1.3</span> Statistical</a>
+  <li><a href="#statistical-analysis" id="toc-statistical-analysis" class="nav-link" data-scroll-target="#statistical-analysis"><span class="header-section-number">1.3</span> Statistical Analysis</a>
   <ul class="collapse">
   <li><a href="#model-specification-and-interpretation" id="toc-model-specification-and-interpretation" class="nav-link" data-scroll-target="#model-specification-and-interpretation"><span class="header-section-number">1.3.1</span> Model Specification and Interpretation</a></li>
   <li><a href="#key-findings-from-the-model" id="toc-key-findings-from-the-model" class="nav-link" data-scroll-target="#key-findings-from-the-model"><span class="header-section-number">1.3.2</span> Key Findings from the Model</a></li>
@@ -7181,8 +7181,8 @@ b&&(b.preventDefault(),b.stopPropagation())}else(l.isFocused||"single"===l.setti
 </div>
 </section>
 </section>
-<section id="statistical" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="statistical"><span class="header-section-number">1.3</span> Statistical</h2>
+<section id="statistical-analysis" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="statistical-analysis"><span class="header-section-number">1.3</span> Statistical Analysis</h2>
 <section id="model-specification-and-interpretation" class="level3" data-number="1.3.1">
 <h3 data-number="1.3.1" class="anchored" data-anchor-id="model-specification-and-interpretation"><span class="header-section-number">1.3.1</span> Model Specification and Interpretation</h3>
 <p>The regression model incorporates a comprehensive set of predictors covering student characteristics (e.g. prior attendance history, visa status), session attributes (e.g. day of week, time of day, lecture capture availability), and module-level factors (e.g. class size, timetable consolidation). A random intercept for students is included to account for the fact that the same student appears across multiple session records, ensuring that the fixed-effect estimates reflect within-student variation rather than between-student differences. By holding all other factors constant simultaneously, the model isolates the independent contribution of each predictor.</p>
@@ -7530,7 +7530,7 @@ b&&(b.preventDefault(),b.stopPropagation())}else(l.isFocused||"single"===l.setti
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/stefanopagliari\.github\.io\/IPAttendanceAnalysis\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
